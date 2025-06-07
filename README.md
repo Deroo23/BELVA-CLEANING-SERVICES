@@ -13,7 +13,11 @@
       color: #333;
     }
 
-    header {
+    header {<header>
+  <img src="belva-logo.jpg" alt="Belva Logo" style="height: 100px;">
+  <h1>Belva Cleaning Services</h1>
+  <p>Professional & Reliable Cleaning Services in Your Area</p>
+</header>
       background-color: #00796b;
       color: white;
       padding: 2rem 1.5rem 1rem;
