@@ -13,16 +13,30 @@
       color: #333;
     }
 
-    header {<header>
-  <img src="belva-logo.jpg" alt="Belva Logo" style="height: 100px;">
-  <h1>Belva Cleaning Services</h1>
-  <p>Professional & Reliable Cleaning Services in Your Area</p>
-</header>
-      background-color: #00796b;
+    header {
+      background-image: url('https://i.ibb.co/4VhM5YV/cover-photo.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 2rem 1.5rem 1rem;
+      padding: 4rem 1.5rem 3rem;
       text-align: center;
       position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header * {
+      position: relative;
+      z-index: 2;
     }
 
     header img.logo {
@@ -33,10 +47,8 @@
       left: 10px;
     }
 
-    nav {<section id="hero" style="text-align: center; margin-top: 1rem;">
-  <img src="belva-logo.jpg" alt="Belva Cleaning Banner" style="max-width: 90%; border-radius: 10px;">
-</section>
-      background-color: #004d40;
+    nav {
+      background-color: #0056b3;
       display: flex;
       justify-content: center;
       gap: 1.5rem;
@@ -51,12 +63,12 @@
 
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
 
     h2 {
-      color: #00796b;
+      color: #007bff;
       margin-bottom: 1rem;
     }
 
@@ -64,7 +76,8 @@
       margin-bottom: 0.5rem;
     }
 
-    form input, form textarea {
+    form input,
+    form textarea {
       width: 100%;
       padding: 0.5rem;
       margin: 0.5rem 0;
@@ -73,7 +86,7 @@
     }
 
     form button {
-      background-color: #00796b;
+      background-color: #007bff;
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
@@ -110,7 +123,7 @@
     }
 
     .call {
-      background-color: #00796b;
+      background-color: #007bff;
     }
 
     footer {
@@ -120,13 +133,27 @@
       color: #555;
     }
 
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
         align-items: center;
       }
 
-      form input, form textarea, form button {
+      form input,
+      form textarea,
+      form button {
         font-size: 1rem;
       }
 
@@ -149,7 +176,6 @@
 <body>
 
   <header>
-    <!-- Logo Placeholder -->
     <img src="logo.png" alt="Belva Logo" class="logo" />
     <h1>Belva Cleaning Services</h1>
     <p>Professional & Reliable Cleaning Services in Your Area</p>
@@ -158,6 +184,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
     <a href="#location">Location</a>
   </nav>
@@ -179,6 +206,22 @@
       <li>✔ Move-In / Move-Out Cleaning</li>
       <li>✔ Regular Cleaning Plans</li>
     </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="https://i.ibb.co/4VhM5YV/cover-photo.jpg" alt="Photo 1" />
+      <img src="https://i.ibb.co/Txj8QNWq/image2.jpg" alt="Photo 2" />
+      <img src="https://i.ibb.co/sJmNVFYS/image3.jpg" alt="Photo 3" />
+      <img src="https://i.ibb.co/ycY3vv5r/image4.jpg" alt="Photo 4" />
+      <img src="https://i.ibb.co/nM8LFScf/image5.jpg" alt="Photo 5" />
+      <img src="https://i.ibb.co/wFLc3tft/image6.jpg" alt="Photo 6" />
+      <img src="https://i.ibb.co/Tq0JwWKW/image7.jpg" alt="Photo 7" />
+      <img src="https://i.ibb.co/FqNBgQKH/image8.jpg" alt="Photo 8" />
+      <img src="https://i.ibb.co/qzmTLxK/image9.jpg" alt="Photo 9" />
+      <img src="https://i.ibb.co/zVm82g3X/image10.jpg" alt="Photo 10" />
+    </div>
   </section>
 
   <section id="contact">
