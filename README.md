@@ -33,7 +33,9 @@
       left: 10px;
     }
 
-    nav {
+    nav {<section id="hero" style="text-align: center; margin-top: 1rem;">
+  <img src="belva-logo.jpg" alt="Belva Cleaning Banner" style="max-width: 90%; border-radius: 10px;">
+</section>
       background-color: #004d40;
       display: flex;
       justify-content: center;
