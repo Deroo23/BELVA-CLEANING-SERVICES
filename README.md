@@ -8,11 +8,11 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #e6f7ff; /* Clean,maroon */
+      background-color: #e6f7ff; /* Clean, fresh blue */
       color: #333;
     }header {
   background-color: #007bff;
-  color: white;
+  color: skyblue;
   padding: 2rem 1.5rem 1rem;
   text-align: center;
   position: relative;
